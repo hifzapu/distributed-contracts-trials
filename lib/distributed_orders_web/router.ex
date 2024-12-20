@@ -27,6 +27,7 @@ defmodule DistributedOrdersWeb.Router do
 
     live "/", HomeLive.Index
 
+    live "/payment", PaymentLive.New, :index
     # live "/orders", OrderLive.Index, :index
     live "/orders/new", OrderLive.New, :new
     # live "/orders/:id/edit", OrderLive.Index, :edit
