@@ -20,6 +20,7 @@ defmodule DistributedOrdersWeb.Router do
     get "/about", PageController, :about
 
     live "/", HomeLive.Index
+    live "/payment", PaymentLive.New, :index
 
     # live "/orders", OrderLive.Index, :index
     live "/orders/new", OrderLive.New, :new
